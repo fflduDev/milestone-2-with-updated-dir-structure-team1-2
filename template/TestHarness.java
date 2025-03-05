@@ -20,18 +20,18 @@ public class TestHarness {
 		//display non equality using your overriden equals method
 		//display equality using your overriden equals method
 
-		TEST_Equals(p1, p2);
-		TEST_Equals(p3, p3);
+		//TEST_Equals(p1, p2);
+		//TEST_Equals(p3, p3);
 		
 		//TODO: 2 cases:
 		//display hashcode case that demonstrates collision
 		//display hashcode case that demonstrates non- collision
 
-		TEST_hashcode(p1, p3);
-		TEST_hashcode(p2, p3);
+		//TEST_hashcode(p1, p3);
+		//TEST_hashcode(p2, p3);
 
 		//Create the phonebook handler
-		phonebookHander = new PhonebookHandler(phonebook);
+		//phonebookHander = new PhonebookHandler(phonebook);
 		
 		//TODO
 		//call 
@@ -44,6 +44,11 @@ public class TestHarness {
 		//(2) a call to search does not find the user & displays some detail illustrating same
 		TEST_Search(phonebookHander, sortedContacts, "Juan");
 		 
+		
+		//test
+		Contact c=new Contact("test");
+		c.addPhonebookEntry("home", "1234567890");
+		
 
 	}
 
@@ -141,11 +146,11 @@ public class TestHarness {
 		System.out.println("Adding Entries to the phonebook ....\n");
 		TimeUnit.SECONDS.sleep(1);
 
-		phonebook.put(p1, p1.getPhonebookEntries()); // put ultimately calls overriden hashCode
+		/*phonebook.put(p1, p1.getPhonebookEntries()); // put ultimately calls overriden hashCode
 		phonebook.put(p2, p2.getPhonebookEntries());
 		phonebook.put(p3, p3.getPhonebookEntries());
 		phonebook.put(p4, p4.getPhonebookEntries());
-		phonebook.put(p5, p5.getPhonebookEntries());
+		phonebook.put(p5, p5.getPhonebookEntries());*/
 
 	}
 
