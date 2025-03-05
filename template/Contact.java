@@ -30,6 +30,8 @@ class Contact {
 	 public void addPhonebookEntry(String number, String type) {
 		 PhonebookEntry p=new PhonebookEntry(number,type);
 		 entries.add(p);
+		 System.out.println("added: "+p.getNumber());//test print, delete
 	 }
+	 //TODO override 
 
 }
