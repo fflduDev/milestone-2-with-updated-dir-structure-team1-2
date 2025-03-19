@@ -17,14 +17,14 @@ class PhonebookEntry{
 		this.type=type;
 	}
 	
-	public String getNumber() {
+	public String getPhoneNumber() {
 		return number;
 	}
 	public String getType() {
 		return type;
 	}
 	
-	public void setNumber(String number) {
+	public void setPhoneNumber(String number) {
 		this.number=number;
 	}
 	public void setType(String type) {
