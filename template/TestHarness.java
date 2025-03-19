@@ -19,16 +19,17 @@ public class TestHarness {
 		//TODO: 2 cases:
 		//display non equality using your overriden equals method
 		//display equality using your overriden equals method
-
-		//TEST_Equals(p1, p2);
-		//TEST_Equals(p3, p3);
+		
+		TEST_Equals(p1, p2);
+		TEST_Equals(p3, p3);
 		
 		//TODO: 2 cases:
 		//display hashcode case that demonstrates collision
 		//display hashcode case that demonstrates non- collision
-
-		//TEST_hashcode(p1, p3);
-		//TEST_hashcode(p2, p3);
+		System.out.println("testing hashcode for p1 and p3: ");
+		TEST_hashcode(p1, p3);
+		System.out.println("testing hashcode for p2 and p3: ");
+		TEST_hashcode(p2, p3);
 
 		//Create the phonebook handler
 		//phonebookHander = new PhonebookHandler(phonebook);
